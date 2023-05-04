@@ -38,31 +38,31 @@ jobs:
       - name: dotnet build and publish
         run: |
           dotnet restore
-          dotnet build Fabillio.Common.Exceptions/Fabillio.Common.Exceptions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Validation/Fabillio.Common.Validation.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Configurations/Fabillio.Common.Configurations.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Notifications/Fabillio.Common.Notifications.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Helpers/Fabillio.Common.Helpers.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Services/Fabillio.Common.Services.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Clients/Fabillio.Common.Clients.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Messaging/Fabillio.Common.Messaging.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Actors/Fabillio.Common.Actors.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Events.Abstractions/Fabillio.Common.Events.Abstractions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Events/Fabillio.Common.Events.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet build Fabillio.Common.Tests/Fabillio.Common.Tests.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Exceptions/Fabillio.Common.Exceptions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Validation/Fabillio.Common.Validation.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Configurations/Fabillio.Common.Configurations.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Notifications/Fabillio.Common.Notifications.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Helpers/Fabillio.Common.Helpers.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Services/Fabillio.Common.Services.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Clients/Fabillio.Common.Clients.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Messaging/Fabillio.Common.Messaging.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Actors/Fabillio.Common.Actors.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Events.Abstractions/Fabillio.Common.Events.Abstractions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Events/Fabillio.Common.Events.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet build Fabillio.Common.Tests/Fabillio.Common.Tests.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
 
-          dotnet pack Fabillio.Common.Exceptions/Fabillio.Common.Exceptions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Validation/Fabillio.Common.Validation.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Configurations/Fabillio.Common.Configurations.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Notifications/Fabillio.Common.Notifications.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Helpers/Fabillio.Common.Helpers.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Services/Fabillio.Common.Services.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Clients/Fabillio.Common.Clients.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Messaging/Fabillio.Common.Messaging.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Actors/Fabillio.Common.Actors.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Events.Abstractions/Fabillio.Common.Events.Abstractions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Events/Fabillio.Common.Events.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
-          dotnet pack Fabillio.Common.Tests/Fabillio.Common.Tests.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=${{ steps.build_number.outputs.major }}.${{ steps.build_number.outputs.minor }}.${{ steps.build_number.outputs.patch }}${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Exceptions/Fabillio.Common.Exceptions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Validation/Fabillio.Common.Validation.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Configurations/Fabillio.Common.Configurations.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Notifications/Fabillio.Common.Notifications.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Helpers/Fabillio.Common.Helpers.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Services/Fabillio.Common.Services.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Clients/Fabillio.Common.Clients.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Messaging/Fabillio.Common.Messaging.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Actors/Fabillio.Common.Actors.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Events.Abstractions/Fabillio.Common.Events.Abstractions.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Events/Fabillio.Common.Events.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
+          dotnet pack Fabillio.Common.Tests/Fabillio.Common.Tests.csproj -c ${{ env.BUILD_CONFIGURATION }}  -p:PackageVersion=1.0.0${{ env.SUFFIX }}
 
       - name: nuget publish fabillio proget
         run: dotnet nuget push *.Common.*/bin/Release/*.nupkg -k ${{ secrets.PROGET_FAKTUM_NUGET_KEY }} -s https://proget-repository.extense.io/nuget/faktum-nuget/ --skip-duplicate
