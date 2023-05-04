@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RepositoryUrl>https://github.com/yuriy-butkevych/fabillio-common</RepositoryUrl>
+        <RepositoryUrl>https://github.com/jamesfarrugia96/fabillio-common</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 

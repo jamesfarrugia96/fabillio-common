@@ -9,7 +9,7 @@ on:
 env:
   BUILD_CONFIGURATION: "Release"
   DOTNET_VERSION: "6.0.x"
-  GITHUB_PACKAGE_REGISTRY_URL: https://nuget.pkg.github.com/yuriy-butkevych/index.json
+  GITHUB_PACKAGE_REGISTRY_URL: https://nuget.pkg.github.com/jamesfarrugia96/index.json
   SUFFIX: ${{ github.ref == 'refs/heads/develop' && '-prerelease' || '' }}
 
 jobs:
