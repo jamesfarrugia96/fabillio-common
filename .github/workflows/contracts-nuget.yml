@@ -1,4 +1,4 @@
-name: Push Nuget Package to GitHub Package Registry
+name: Push Nuget Package to GitHub Package Registry 
 
 on:
   push:
